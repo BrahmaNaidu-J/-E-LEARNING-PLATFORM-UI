@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="e-learn.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">E-Learn</div>
+    <div class="nav-btns">
+      <button class="btn" onclick="openModal('loginModal')">Login</button>
+      <button class="btn" onclick="openModal('signupModal')">Signup</button>
+    </div>
+  </header>
+
+  <section class="hero text-center">
+    <div class="container">
+      <h1>Enhance Your Skills Online</h1>
+      <p>Join thousands of learners worldwide</p>
+      <a href="#courses" class="btn">Browse Courses</a>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <div class="container">
+      <h2>Popular Courses</h2>
+
+      <!-- Filter Dropdown -->
+      <div class="filter">
+        <select id="filterSelect" onchange="filterCourses()">
+          <option value="all">All</option>
+          <option value="web">Web Development</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+        </select>
+      </div>
+
+      <div class="course-grid">
+        <div class="card" data-category="web">
+          <h3>Web Development Bootcamp</h3>
+          <p>Learn HTML, CSS, and JavaScript from scratch.</p>
+          <a href="#" class="btn">Enroll</a>
+        </div>
+        <div class="card" data-category="python">
+          <h3>Python for Beginners</h3>
+          <p>Start coding in Python with real-world examples.</p>
+          <a href="#" class="btn">Enroll</a>
+        </div>
+        <div class="card" data-category="java">
+          <h3>Java Programming</h3>
+          <p>Master Java from basics to advanced topics.</p>
+          <a href="#" class="btn">Enroll</a>
+        </div>
+        <div class="card" data-category="java">
+          <h3>Data Structures & Algorithms</h3>
+          <p>Crack coding interviews with DSA practice.</p>
+          <a href="#" class="btn">Enroll</a>
+        </div>
+        <div class="card" data-category="python">
+          <h3>Machine Learning</h3>
+          <p>Understand the basics of ML with Python.</p>
+          <a href="#" class="btn">Enroll</a>
+        </div>
+        <div class="card" data-category="web">
+          <h3>Frontend Projects</h3>
+          <p>Build websites using HTML, CSS, and JS.</p>
+          <a href="#" class="btn">Enroll</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Preview -->
+  <section class="video-section">
+    <div class="container">
+      <h2>Course Preview</h2>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pyv0tMm5i_w?si=iMAswD05uK2vAeJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Progress -->
+  <section class="progress-section">
+    <div class="container">
+      <h2>Your Progress</h2>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progress-bar">60%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 E-Learning Platform. All rights reserved.</p>
+  </footer>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h3>Login</h3>
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="btn">Login</button>
+    </div>
+  </div>
+
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('signupModal')">&times;</span>
+      <h3>Signup</h3>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="btn">Signup</button>
+    </div>
+  </div>
+
+  <script src="e-learn.js"></script>
+</body>
+</html>
