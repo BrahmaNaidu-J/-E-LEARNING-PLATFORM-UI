@@ -43,5 +43,3 @@ Designed with CSS grid, transitions, and hover effects to offer a visually appea
 #output
 
 ![Image](https://github.com/user-attachments/assets/9632955b-9e5f-4a59-9136-c431eba5bf11)
-![Image](https://github.com/user-attachments/assets/fe253910-d1b2-4483-b97b-8ba740e509fb)
-![Image](https://github.com/user-attachments/assets/3a8a04cf-07d0-4785-a08a-2bb6a4f0a6ea)
